@@ -1,0 +1,28 @@
+@import "/styles/sass/abstracts/variables";
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    to top,
+    $amazon-orange-dark,
+    $amazon-orange-light
+  );
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    background: linear-gradient(
+      to top,
+      $amazon-orange-light,
+      $amazon-orange-dark
+    );
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,133 @@
+@import "../../../styles/sass/abstracts/variables";
+@import "../../../styles/sass/abstracts/mixins";
+.nav {
+  height: 9vh;
+  top: 0;
+  background-color: $color-header-dark;
+  color: #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  text-transform: capitalize;
+  @include flexBetween;
+  &__logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+    font-size: 1.2rem;
+    &-hide {
+      @media screen and (max-width: 400px) {
+        display: none;
+      }
+    }
+    &-2 {
+      font-weight: bold;
+    }
+  }
+  &__input-group {
+    color: black;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    input {
+      width: 95%;
+      height: 100%;
+      padding: 0.8rem 2rem;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    &-icon {
+      height: 100%;
+      padding: 0.8rem 2rem;
+      border: none;
+      background-color: $amazon-orange-dark;
+      border: none;
+      outline: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  &__option-flex {
+    cursor: pointer;
+    display: flex;
+    margin-right: 3rem;
+    position: relative;
+    font-size: 1.3rem;
+    align-items: center;
+  }
+  &__amount {
+    position: absolute;
+    right: 33px;
+    top: -15px;
+    color: $amazon-orange-dark;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 0.8rem;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    &-location {
+      width: 20px;
+      height: 20px;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+  &__cart {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.nav-2 {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  top: 9vh;
+  height: 7vh;
+  background-color: $color-header-light;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  align-items: center;
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__item {
+    margin-left: 2rem;
+    cursor: pointer;
+
+    &-hide {
+      margin-left: 2rem;
+      cursor: pointer;
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+}

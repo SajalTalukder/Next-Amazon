@@ -1,0 +1,46 @@
+.comment {
+  margin-top: 3rem;
+
+  &__star {
+    width: 30px;
+    height: 30px;
+  }
+  &__user-icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    &-name {
+      font-size: 2rem;
+      margin: 2rem;
+    }
+  }
+  &__date {
+    font-size: 1.3rem;
+  }
+  &__rating {
+    color: yellow;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__comment {
+    font-size: 1.6rem;
+    width: 80%;
+    text-transform: capitalize;
+    color: #eee;
+  }
+  &__user-icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
