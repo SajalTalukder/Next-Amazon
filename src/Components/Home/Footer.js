@@ -98,6 +98,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={cls["footer__copy"]}>
+        <h2>&copy; Copyright Sajal Talukder 2021</h2>
+      </div>
     </footer>
   );
 };

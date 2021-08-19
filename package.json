@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.3",
+    "@stripe/stripe-js": "^1.17.0",
+    "axios": "^0.21.1",
     "firebase": "^8.9.0",
-    "next": "11.0.1",
+    "next": "^11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-responsive-carousel": "^3.2.20",
-    "sass": "^1.37.5"
+    "sass": "^1.37.5",
+    "stripe": "^8.169.0"
   },
   "devDependencies": {
     "eslint": "7.31.0",

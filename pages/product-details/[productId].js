@@ -7,11 +7,16 @@ import {
   getProductByCategory,
 } from "../../src/helper/productApi";
 import ProductDetails from "../../src/Components/Product/ProductDetails";
+import Head from "next/head";
 
 const ProductDetailsPage = ({ product, products }) => {
   const relatedItem = products.slice(0, 4);
   return (
     <>
+      <Head>
+        <title>{product.title}</title>
+        <meta name="description" content={product.descripption} />
+      </Head>
       <Nav />
       <ProductDetails item={product} relatedItems={relatedItem} />
       <Footer />

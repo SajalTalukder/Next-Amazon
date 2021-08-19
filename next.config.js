@@ -3,4 +3,8 @@ module.exports = {
   images: {
     domains: ["fakestoreapi.com"],
   },
+  env: {
+    stripe_public_key: process.env.STRIPE_PUBLIC_KEY,
+    host: "http://localhost:3000",
+  },
 };
