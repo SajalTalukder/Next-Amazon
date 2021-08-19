@@ -5,6 +5,6 @@ module.exports = {
   },
   env: {
     stripe_public_key: process.env.STRIPE_PUBLIC_KEY,
-    host: "http://localhost:3000",
+    host: "https://next-amazon-seven.vercel.app",
   },
 };
